@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitAlarm Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 flex items-center justify-between">
+    <a href="#" class="text-white">
+      <i class="fas fa-home"></i>
+    </a>
+    <div class="flex items-center">
+      <i class="fas fa-running text-white text-3xl mr-2"></i> 
+      <span class="text-3xl text-white font-bold">FitAlarm</span>
+    </div>
+    <a href="#" class="text-white mx-2">
+      <img src="https://img.freepik.com/premium-vector/man-avatar-profile-round-icon_24640-14044.jpg" alt="Avatar" class="w-10 h-10 rounded-full">
+    </a>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mx-auto my-10 p-8 bg-white rounded-lg shadow-lg">
+
+    <!-- User Profile  -->
+    <div class="flex items-center">
+        <div class="rounded-full">
+          <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" alt="User" class="w-32 h-32 rounded-full">
+        </div>
+        <div class="flex ml-12 space-x-60">
+          <div>
+            <p class="text-gray-700 text-sm">Nombre: Juan Perez</p>
+            <p class="text-gray-700 text-sm">Peso: 75 kg</p>
+            <p class="text-gray-700 text-sm">Correo: juan@gmail.com</p>
+          </div>
+          <div>
+            <p class="text-gray-700 text-sm">Edad: 24</p>
+            <p class="text-gray-700 text-sm">Última sesión: 2/02/2024</p>
+            <p class="text-gray-700 text-sm">Celular: 3205553453</p>
+          </div>
+        </div>
+    </div>
+  
+
+    <!-- Tabla -->
+    <div class="mt-10">
+      <div class="flex justify-between items-center mb-5">
+        <h1 class="text-xl font-bold">Rutinas Realizadas</h1>
+        <div class="relative w-40">
+          <input type="search" name="search" placeholder="Buscar" class="bg-white h-10 px-5 pr-10 w-full border-2 border-gray-300 rounded focus:outline-none">
+          <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+            <i class="fas fa-search text-gray-400"></i>
+          </button>
+        </div>
+      </div>
+      <div class="overflow-x-auto rounded-lg">
+        <table class="w-full">
+          <thead class="bg-blue-700 text-white">
+            <tr>
+              <th class="py-3 px-4 text-left">ID</th>
+              <th class="py-3 px-4 text-left">Fecha</th>
+              <th class="py-3 px-4 text-left">Nombre</th>
+              <th class="py-3 px-4 text-left">Tiempo</th>
+            </tr>
+          </thead>
+          <tbody class="bg-blue-300 divide-y divide-blue-500">
+            <tr>
+              <td class="py-3 px-4">1</td>
+              <td class="py-3 px-4">03-02-2024</td>
+              <td class="py-3 px-4">Espalda 1</td>
+              <td class="py-3 px-4">30 min</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4">2</td>
+              <td class="py-3 px-4">20-01-2024</td>
+              <td class="py-3 px-4">Pecho1</td>
+              <td class="py-3 px-4">60 min</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="flex justify-between items-center mt-6">
+        <span>Total sesiones: 2</span>
+        <div class="flex items-center">
+          <a href="#" class="text-gray-500 hover:text-gray-900 mr-2">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <span class="text-sm">Pág 1</span>
+          <a href="#" class="text-gray-500 hover:text-gray-900 ml-2">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
