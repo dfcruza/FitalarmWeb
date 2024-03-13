@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pecho 1 - FitAlarm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+  
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 flex items-center justify-between">
+    <a href="#" class="text-white">
+      <i class="fas fa-home"></i>
+    </a>
+    <div class="flex items-center">
+      <i class="fas fa-running text-white text-3xl mr-2"></i> 
+      <span class="text-3xl text-white font-bold">FitAlarm</span>
+    </div>
+    <a href="#" class="text-white mx-2">
+      <img src="https://img.freepik.com/premium-vector/man-avatar-profile-round-icon_24640-14044.jpg" alt="Avatar" class="w-10 h-10 rounded-full">
+    </a>
+  </nav>
+
+  <!-- Detalle rutina -->
+  <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-md max-w-2xl">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Pecho 1</h2>
+  
+    <!-- Iamgen ref -->
+    <div class="flex justify-center mb-6">
+      <div class="h-40 w-40 bg-no-repeat bg-center" style="background-image: url('https://cdn.shopify.com/s/files/1/0269/5551/3900/files/chest_97b63d22-696e-4488-9e6d-4dcbaa07aa38.svg?v=1680893961'); background-size: contain;"></div>
+    </div>
+    
+
+    <!-- Dropdowns -->
+    <div class="flex flex-wrap justify-center gap-6 mb-6">
+        <div class="relative">
+          <select class="bg-gray-300 text-gray-800 p-2 rounded border appearance-none">
+            <option selected>Tipo</option>
+            <option value="pecho">Pecho</option>
+            <option value="espalda">Espalda</option>
+            <option value="pierna">Pierna</option>
+            <option value="brazo">Brazo</option>
+            <option value="hombro">Hombro</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="relative">
+          <select class="bg-gray-300 text-gray-800 p-2 rounded border appearance-none">
+            <option selected>Dificultad</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="relative">
+          <select class="bg-gray-300 text-gray-800 p-2 rounded border appearance-none pl-4 pr-10">
+            <option selected>Duración</option>
+            <option value="30min">15 Min</option>
+            <option value="60min">30 Min</option>
+            <option value="90min">45 Min</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+
+    <!-- Ejercicios -->
+    <div class="flex flex-col items-center mb-4">
+        <div class="bg-gray-300 p-2 rounded border max-w-md w-full mb-4 flex items-center justify-between">
+          <span>Ejercicios</span>
+          <i class="fas fa-plus-square"></i>
+        </div>
+        <div class="bg-gray-300 p-2 rounded border max-w-sm w-full flex items-center justify-between">
+          <span>Press Banca</span>
+          <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="text-center">
+      <button class="bg-red-500 text-white p-2 rounded mr-2">Cancelar</button>
+      <button class="bg-blue-500 text-white p-2 rounded">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
